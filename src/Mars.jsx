@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGLTF, useAnimations, OrbitControls } from "@react-three/drei";
 
 import scene from "./assets/mars.glb";
 
@@ -22,6 +22,7 @@ function Moon({ currentAnimation, ...props }) {
             <group name="Object_2">
               <group name="RootNode">
                 <group name="Mars" rotation={[-1.833, 0, 0]} scale={0.1}>
+                  <OrbitControls/>
                   <mesh
                     name="Mars_01_-_Default_0"
                     castShadow

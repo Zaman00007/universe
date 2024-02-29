@@ -1,0 +1,65 @@
+:root {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000000;
+}
+
+#slider {
+  position: absolute;
+  left: 90%;
+  top: 10px;
+  z-index: 1;
+}
+
+#mh1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 50vw;
+  height: 50vh;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+}
+
+#changeView{
+  position: absolute;
+  top: 5%;
+  left: 93%;
+  z-index: 2;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #62a5e8;
+}
+
+#mainCanvas {
+  position: sticky;
+  top: 0;
+  min-width: auto;
+  min-height: auto;
+}
+
+#magic, #mainCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#magic {
+  z-index: 1;
+  background-color: #c800ff;
+  opacity: 1;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}

@@ -25,12 +25,12 @@ function App() {
                     <ambientLight intensity={0.5}/>
                     <pointLight/>
                     <spotLight/>
-        {/* <Moon 
+        <Moon 
           position={[200,0,0]}
         
-        /> */}
+        />
         <Saturn
-          position={[-100,0,0]}
+          position={[0,0,0]}
         />
         {/* <Earth
           position={[150,0,0]}
